@@ -1,6 +1,6 @@
 # 4A Motor Shield
 ## Introduction
-The 4A Motor Shield is based on the Free scale MC33932 dual H-Bridge Power IC , which can control inductive loads with currents up to 5.0A peak per single bridge. It lets you drive two DC motors with your Arduino/Seeeduino board, controlling the speed and direction of each one independently. You can also measure the motor current absorption of each motor, among other features. 
+The 4A Motor Shield is based on the Free scale MC33932 dual H-Bridge Power IC , which can control inductive loads with currents up to 5.0A peak per single bridge. It lets you drive two DC motors with your Arduino/Seeeduino board, controlling the speed and direction of each one independently. You can also measure the motor current absorption of each motor, among other features.
 
 ![](https://github.com/SeeedDocument/4A_Motor_Shield/raw/master/images/4A_Motor_Shield_top.jpg)
 
