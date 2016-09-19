@@ -1,8 +1,8 @@
 # 4A Motor Shield
 ## Introduction
-The 4A Motor Shield is based on the Free scale MC33932 dual H-Bridge Power IC , which can control inductive loads with currents up to 5.0A peak per single bridge. It lets you drive two DC motors with your Arduino/Seeeduino board, controlling the speed and direction of each one independently. You can also measure the motor current absorption of each motor, among other features.
+The 4A Motor Shield is based on the Free scale MC33932 dual H-Bridge Power IC , which can control inductive loads with currents up to 5.0A peak per single bridge. By using this shield, you are able to drive two DC motors with Arduino/Seeeduino board, controlling the speed and direction of each one independently. You can also measure the motor current absorption of each motor, among other features.
 
-![](https://github.com/SeeedDocument/4A_Motor_Shield/raw/master/images/4A_Motor_Shield_top.jpg)
+![](https://github.com/SeeedDocument/4A_Motor_Shield/raw/master/images/4A%20motor%20shield%20clear.jpg)
 
 The on board DC/DC converter support a very wide range of input voltage, and can provide a 5V power supply for the microcontroller board with 100mA maximum current. So, you just need one power supply to drive the motors and power up the logic circuit.
 
@@ -23,30 +23,30 @@ The on board DC/DC converter support a very wide range of input voltage, and can
 
 ## Hardware Overview
 
-![](https://github.com/SeeedDocument/4A_Motor_Shield/raw/master/images/4a_motor_shield_top_view.jpeg)
+![](https://github.com/SeeedDocument/4A_Motor_Shield/raw/master/images/4A%20Motor%20Shield%20hardware%20overview.jpg)
 
-|||
-|:---:|---|
-|**J1**|DC Input connector.|
-|**J2**|Motor Driver output connector.|
-|**EN, FT**|Jumpers for EN control and Fault flag detection.If short circuit the EN jumper, the EN signal was mapped to the D4 pin ,you can control the H-Bridge disable output or reset the Fault flag by D4 pin. If short circuit the FT jumper, the fault flag signal was mapped to D3 pin ,you can read the fault flag from the D3 pin ether.|
-|**IO**|Logic Voltage level Select Jumper. You can choose the control logic voltage level from this jumper.|
-|**IA, IB**|Current sensor jumper. If you need to detect the motor current, you have to short circuit these jumpers.The motor current will be converted into voltage signal and can be read from A0,A1 pin.|
-|**Power Supply** |You have to power up the shield from the J1(DC input connector).The input voltage range can be set up to 6Vdc ~ 28Vdc.The on board DC/DC converter can convert the DC input voltage to 5Vdc output voltage to supply the logic circuit.The DC/DC converter can also power up the microcontroller board(Arduino/Seeeduino) form "5V" pin for maximun 100mA current.|
-|**Motor Interface**|Out 1 and Out 2(Out 3 and Out 4) connect Motor A(B) for DC Motor.|
+|Item|Name|Description|
+|:---:|:---:|---|
+|1|**J1**|DC Input connector.|
+|2|**J2**|Motor Driver output connector.|
+|3|**EN, FT**|Jumpers for EN control and Fault flag detection. If short-circuit the EN jumper, the EN signal will be mapped to the D4 pin ,you are able to control the H-Bridge disable output or reset the Fault flag by D4 pin. If short-circuit the FT jumper, the fault flag signal will be mapped to D3 pin ,you are able to read the fault flag from the D3 pin ether.|
+|4|**IO**|Logic Voltage level Selecting Jumper.|
+|5|**IA, IB**|Current sensor jumper. If you want to detect the motor current, one way is to short-circuit these jumpers. The motor current will be converted into voltage signal and can be read from A0,A1 pin.|
+|Other|**Power Supply** |The shield is powered up from the J1(DC input connector).The input voltage range is 6Vdc ~ 28Vdc.The on board DC/DC converter can convert the DC input voltage to 5Vdc output voltage to supply the logic circuit. The DC/DC converter can also power up the microcontroller board(Arduino/Seeeduino) form "5V" pin for maximum 100mA current.|
+|Other|**Motor Interface**|Out 1 and Out 2(Out 3 and Out 4) connect Motor A(B) for DC Motor.|
 
 !!!WARNING
-    Do not touch the H-bridge IC or PCB board during working. Its temperature can reach up to 100 degrees in the case of full load operating.
+    Do not touch the H-bridge IC or PCB board during working. Its temperature can reach up to 100 Celsius degrees in the case of full load operating.
 
 ## Make It Now
 ---
-- Stpe1:connect the drive voltage to the power supply terminals.
-- Step2:Connect DC motor to the motor shield Output Pins OUT1& OUT2(OUT3& OUT4).
+- Stpe1: Connect the drive voltage to the power supply terminals.
+- Step2: Connect DC motor to the motor shield Output Pins OUT1& OUT2(OUT3& OUT4).
 
 ![](https://github.com/SeeedDocument/4A_Motor_Shield/raw/master/images/Drive_DC_Motor.png)
 
-- Step3:Install the library we provide in the Resources section into Arduino libraries file
-- Step4:find the example “DCMotorDemo” by the path: File->Example->MotorDrive->DCMotorDemo.
+- Step3: Install the library we provide in the Resources section into Arduino libraries file
+- Step4: Find the example “DCMotorDemo” by the path: File->Example-> MotorDrive-> DCMotorDemo.
 
 ![](https://github.com/SeeedDocument/4A_Motor_Shield/raw/master/images/DC_Motor_Code.jpg)
 
@@ -55,3 +55,7 @@ The on board DC/DC converter support a very wide range of input voltage, and can
 - [Eagle File](https://github.com/SeeedDocument/4A_Motor_Shield/raw/master/resources/4A_MOTOR_Shield_v1.0.zip)
 - [Motor Shield Library](https://github.com/SeeedDocument/4A_Motor_Shield/raw/master/resources/MotorDriver20121210.zip)
 - [MC33932 Datasheet](https://github.com/SeeedDocument/4A_Motor_Shield/raw/master/resources/MC33932.pdf)
+
+## Help us to make it better
+
+<iframe style="height: 600px; width: 500px; margin: 10px 0 10px;" allowTransparency="true" src="https://www.surveymonkey.com/r/YSM25ZN" frameborder="0"></iframe>
